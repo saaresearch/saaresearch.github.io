@@ -9,7 +9,7 @@ const Models = ({tick}) => {
         if (tick >= 7) {
             setInterval(()=>{
                 setActiveBox(prevIndex => (prevIndex + 1));
-            }, 2500)
+            }, 1000)
         }
     },[tick])
 
@@ -89,14 +89,14 @@ const HalfRight = styled.div`
     transform: rotate(180deg);
     position: absolute;
     color: ${({ isActive }) => isActive ? 'rgba(255,255,255,0.9)' : 'gray'};
-    transition: all 2s ease;
+    transition: all 1s ease;
     top: 0;
     left: -40px;
     font-size: 15px;
   }
 `
 const Line = styled.div`
-  transition: all 2s ease;
+  transition: all 1s ease;
   padding: 10% 0;
   border-bottom-left-radius: 4px;
   margin-top: -2px;
@@ -126,7 +126,7 @@ const Block = styled.div`
   justify-content: center;
   cursor: pointer;
   color: ${({ isActive }) => isActive ? 'rgba(0,255,255,0.9)' : 'gray'};
-  transition: all 2s ease;
+  transition: all 1s ease;
   z-index: 999;
   -webkit-box-shadow: ${({ isActive }) => isActive ? '1px 0px 28px -10px rgba(0, 221, 255, 0.85) inset' : ''};
   -moz-box-shadow: ${({ isActive }) => isActive ? '1px 0px 28px -10px rgba(0, 221, 255, 0.85) inset': ''};

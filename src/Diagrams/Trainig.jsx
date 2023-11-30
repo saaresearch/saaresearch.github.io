@@ -13,7 +13,7 @@ const Trainig = () => {
                 if (activeBox < 15) {
                     setActiveBox(prevIndex => (prevIndex + 1));
                 }
-            }, 2500);
+            }, 1000);
             window.removeEventListener('scroll', checkVisibility);
         }
     };
@@ -83,7 +83,7 @@ const Trainig = () => {
 export default Trainig;
 
 const TextUp = styled.span`
-    transition: all 2s ease;
+    transition: all 1s ease;
     color: ${({ isActive }) => isActive ? 'rgba(255,255,255,0.6)' : 'gray'};
     width: 90%;
     margin: 0 auto;
@@ -142,7 +142,7 @@ const Box = styled.div`
     width: 100%;
     height: 100%;
     border: 3px solid transparent; /* Изначально прозрачный бордер */
-    animation: ${({ isActive }) => isActive ? css`${fillBorderAnimation} 3s forwards` : 'none'};
+    animation: ${({ isActive }) => isActive ? css`${fillBorderAnimation} 1s forwards` : 'none'};
     transform: translate(-50%, -50%) scaleY(0);
     transform-origin: top;
   }
@@ -188,7 +188,7 @@ const ArrowMiddle = styled.div`
   background: gray;
   height: 2px;
   border-radius: 10px;
-  animation: ${({ isActive }) => isActive ? css`${arrowMiddleAnimation} 0.5s 0.5s forwards` : 'none'};
+  animation: ${({ isActive }) => isActive ? css`${arrowMiddleAnimation} 0.5s forwards` : 'none'};
 `
 const ArrowBot = styled.div`
   width: 30px;
@@ -211,7 +211,7 @@ const ArrowBot = styled.div`
     border-color: transparent gray gray transparent;
     margin-top: -16px;
     z-index: 999;
-    animation: ${({ isActive }) => isActive ? css`${arrowBotAnimation} 0.5s 0.5s forwards` : 'none'};
+    animation: ${({ isActive }) => isActive ? css`${arrowBotAnimation} 0.5s forwards` : 'none'};
   }
   
 `
@@ -230,9 +230,9 @@ const fillBorderAnimation = keyframes`
   100% {
     transform: translate(-50%, -50%) scaleY(1);
     border-color: rgba(255,255,255,0.9) rgba(255,255,255,0.9) rgba(255,255,255,0.9) rgba(255,255,255,0.9);
-    -webkit-box-shadow: 1px 0px 28px -10px rgba(0, 221, 255, 0.85) inset;
-    -moz-box-shadow: 1px 0px 28px -10px rgba(0, 221, 255, 0.85) inset;
-    box-shadow: 1px 0px 28px -10px rgba(0, 221, 255, 0.85) inset;
+    -webkit-box-shadow: 1px 0px 40px -10px rgba(0, 221, 255, 0.85) inset;
+    -moz-box-shadow: 1px 0px 40px -5px rgba(0, 221, 255, 0.85) inset;
+    box-shadow: 1px 0px 40px -5px rgba(0, 221, 255, 0.85) inset;
   }
 `;
 const fillArrowAnimation = keyframes`

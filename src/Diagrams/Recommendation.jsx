@@ -13,7 +13,7 @@ const Recommendation = () => {
                 if (activeBox < 15) {
                     setActiveBox(prevIndex => (prevIndex + 1));
                 }
-            }, 2500);
+            }, 1000);
             window.removeEventListener('scroll', checkVisibility);
         }
     };
@@ -281,7 +281,7 @@ const ArrowMiddle = styled.div`
   background: gray;
   height: 2px;
   border-radius: 10px;
-  animation: ${({ isActive }) => isActive ? css`${arrowMiddleAnimation} 0.5s 0.5s forwards` : 'none'};
+  animation: ${({ isActive }) => isActive ? css`${arrowMiddleAnimation} 0.5s forwards` : 'none'};
 `
 const ArrowBot = styled.div`
   width: 30px;
@@ -307,7 +307,7 @@ const ArrowBot = styled.div`
     margin-top: -16px;
     margin-left: -1px;
     z-index: 999;
-    animation: ${({isActive}) => isActive ? css`${arrowBotAnimation} 0.5s 0.5s forwards` : 'none'};
+    animation: ${({isActive}) => isActive ? css`${arrowBotAnimation} 0.5s forwards` : 'none'};
   }
 
 `
@@ -326,9 +326,9 @@ const fillBorderAnimation = keyframes`
   100% {
     transform: translate(-50%, -50%) scaleY(1);
     border-color: rgba(255,255,255,0.9) rgba(255,255,255,0.9) rgba(255,255,255,0.9) rgba(255,255,255,0.9);
-    -webkit-box-shadow: 1px 0px 28px -10px rgba(0, 221, 255, 0.85) inset;
-    -moz-box-shadow: 1px 0px 28px -10px rgba(0, 221, 255, 0.85) inset;
-    box-shadow: 1px 0px 28px -10px rgba(0, 221, 255, 0.85) inset;
+    -webkit-box-shadow: 1px 0px 40px -10px rgba(0, 221, 255, 0.85) inset;
+    -moz-box-shadow: 1px 0px 40px -5px rgba(0, 221, 255, 0.85) inset;
+    box-shadow: 1px 0px 40px -5px rgba(0, 221, 255, 0.85) inset;
   }
 `;
 const fillArrowAnimation = keyframes`

@@ -16,7 +16,7 @@ const About = () => {
                 if (activeBox < 15) {
                     setActiveBox(prevIndex => (prevIndex + 1));
                 }
-            }, 2500);
+            }, 1000);
             window.removeEventListener('scroll', checkVisibility);
         }
     };
@@ -261,7 +261,7 @@ const BlockWrapper = styled.div`
   }
 `
 const TextUp = styled.span`
-    transition: all 2s ease;
+    transition: all 1s ease;
     color: ${({ isActive }) => isActive ? 'rgba(255,255,255,0.6)' : 'gray'};
     width: 90%;
     margin: 0 auto;
@@ -270,7 +270,7 @@ const TextUp = styled.span`
 const TextLeft = styled.span`
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    transition: all 2s ease;
+    transition: all 1s ease;
     color: ${({ isActive }) => isActive ? 'rgba(255,255,255,0.9)' : 'gray'};
 `
 const Half = styled.div`
@@ -384,7 +384,7 @@ const Box = styled.div`
     width: 100%;
     height: 100%;
     border: 3px solid transparent; /* Изначально прозрачный бордер */
-    animation: ${({ isActive }) => isActive ? css`${fillBorderAnimation} 3s forwards` : 'none'};
+    animation: ${({ isActive }) => isActive ? css`${fillBorderAnimation} 1s forwards` : 'none'};
     transform: translate(-50%, -50%) scaleY(0);
     transform-origin: top;
   }
@@ -429,7 +429,7 @@ const ArrowTop = styled.div`
     width: 100%;
     height: 100%;
     border: 3px solid gray;
-    animation: ${({ isActive }) => isActive ? css`${fillArrowAnimation} 1s forwards` : 'none'};
+    animation: ${({ isActive }) => isActive ? css`${fillArrowAnimation} 0.5s forwards` : 'none'};
     transform: translate(-50%, -50%) scaleY(0);
     transform-origin: top;
   }
@@ -440,7 +440,7 @@ const ArrowMiddle = styled.div`
   background: gray;
   height: 2px;
   border-radius: 10px;
-  animation: ${({ isActive }) => isActive ? css`${arrowMiddleAnimation} 0.5s 0.5s forwards` : 'none'};
+  animation: ${({ isActive }) => isActive ? css`${arrowMiddleAnimation} 0.5s forwards` : 'none'};
 `
 const ArrowBot = styled.div`
   width: 30px;
@@ -464,7 +464,7 @@ const ArrowBot = styled.div`
     margin-top: -16px;
     margin-left: -1px;
     z-index: 999;
-    animation: ${({ isActive }) => isActive ? css`${arrowBotAnimation} 0.5s 0.5s forwards` : 'none'};
+    animation: ${({ isActive }) => isActive ? css`${arrowBotAnimation} 0.5s forwards` : 'none'};
   }
   
 `

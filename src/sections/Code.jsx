@@ -535,7 +535,8 @@ const CodeBlock = styled.div`
     word-break: normal;
     word-wrap: normal;
     font-family: 'Fira Code', monospace;
-    overflow: scroll;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
   
 `

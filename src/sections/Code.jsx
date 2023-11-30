@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import SectionLine from "../components/SectionLine";
-
+import vids from '../vids.mp4'
 const Code = () => {
     const installCode = `git clone https://github.com/saaresearch/ODRS.git\ncd ODRS/\npip install -r requirements.txt `
     const dir1 = `user_datasets
@@ -393,7 +393,7 @@ SPLIT_VAL_VALUE: 0.35`
                 </Images>
                 <p>This project is actively used in testing new models and datasets in Insystem for classification and detection of garbage.</p>
                 <br/>
-                <img src="https://github.com/saaresearch/ODRS/raw/master/docs/img/monitoring_system.png" alt="third"/>
+                <video src={vids} autoPlay="autoplay" muted loop />
                 <SectionLine text={'Our team'}/>
                 <PhotoWrapper>
                     <PhotoContainer>
@@ -479,6 +479,9 @@ const Container = styled.div`
   padding: 15px;
   width: 100%;
   max-width: 940px;
+  video {
+    width: 100%;
+  }
   img {
     width: 100%;
   }

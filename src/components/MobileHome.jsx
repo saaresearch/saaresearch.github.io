@@ -49,14 +49,14 @@ const SubTitle = styled.h2`
   position: absolute;
   font-size: 35px;
   z-index: 5;
-  top: 350px;
+  top: 40%;
   left: calc(50% - 150px);
 `
 const Button = styled.a`
   position: absolute;
   z-index: 999;
   left: calc(50% - 120px);
-  top: 700px;
+  bottom: 100px;
   border: 4px solid white;
   display: flex;
   gap: 8px;

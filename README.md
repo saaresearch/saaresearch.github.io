@@ -41,26 +41,26 @@ well as one-stage detectors such as SSD and YOLO (including families v5, v7, v8)
 Internal components:
 
 * ***RecommendationEngine***: generates recommendations based on user data and dataset characteristics.
-<br/>
-<br>
+  <br/>
+  <br>
 <div align="center">
     <img src="docs/img/rec_alg.jpg" width="400">
 </div>
 
-The recommendation algorithm is based on production rules. The primary set of rules (knowledge base) is formed on 
-the basis of the results of the analysis of scientific sources and standard data sets, but also empirical processing 
+The recommendation algorithm is based on production rules. The primary set of rules (knowledge base) is formed on
+the basis of the results of the analysis of scientific sources and standard data sets, but also empirical processing
 of data sets from specific industries.
 The main criteria for drawing up the rules were chosen:
 
-1. Dimension of the model 
+1. Dimension of the model
 2. The value of metrics (mAP, Recall, Accuracy) for selected datasets
 3. The speed of the model on GPU and CPU
 4. Supported image format and dimension
 
 
 * ***Training*** - Training of models proposed by the system
-<br/>
-<br>
+  <br/>
+  <br>
 <div align="center">
     <img src="docs/img/train.jpg" width="400">
 </div>
@@ -229,7 +229,7 @@ After you have placed your dataset in the folder ***user_datasets/yolo*** and cr
     SPLIT_VAL_VALUE: 0.35
     ```
 3. Starting training:
-**NOTE**: If, for example, you specified in ***custom_config.yaml***, the path to the yolov5 model, and you want to start yolov8, training will not start.
+   **NOTE**: If, for example, you specified in ***custom_config.yaml***, the path to the yolov5 model, and you want to start yolov8, training will not start.
 
     ```markdown
     cd ODRS/ODRS/train_utils/train_model

@@ -6,7 +6,7 @@ const Recommendation = () => {
 
     const checkVisibility = () => {
         const rect = elementRef.current.getBoundingClientRect();
-        const isVisible = rect.top <= 60;
+        const isVisible = rect.top <= 400;
         if (isVisible) {
 
             setInterval(() => {

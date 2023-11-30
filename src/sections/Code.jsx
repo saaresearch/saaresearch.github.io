@@ -401,23 +401,23 @@ SPLIT_VAL_VALUE: 0.35`
                 <PhotoWrapper>
                     <PhotoContainer>
                         <img src={ph1} alt=""/>
-                        <a href="https://itmo.ru/ru/viewperson/1194/duhanov_aleksey_valentinovich.htm" target={'_blank'}>Алексей Духанов</a>
-                        <p>Куратор</p>
+                        <a href="https://itmo.ru/ru/viewperson/1194/duhanov_aleksey_valentinovich.htm" target={'_blank'}>Alexey Dukhanov</a>
+                        <p>Curator</p>
                     </PhotoContainer>
                     <PhotoContainer>
                         <img src={ph2} alt=""/>
-                        <a href="https://github.com/aimspot" target={'_blank'}>Михаил Герасимчук</a>
-                        <p>Специалист по ML</p>
+                        <a href="https://github.com/aimspot" target={'_blank'}>Mikhail Gerasimchuk</a>
+                        <p>ML SpecialistL</p>
                     </PhotoContainer>
                     <PhotoContainer>
                         <img src="https://avatars.githubusercontent.com/u/38701834?v=4" alt=""/>
-                        <a href="https://github.com/a-smetanin" target={'_blank'}>Артем Сметанин</a>
-                        <p>Специалист по ML</p>
+                        <a href="https://github.com/a-smetanin" target={'_blank'}>Artem Smetanin</a>
+                        <p>ML Specialist</p>
                     </PhotoContainer>
                     <PhotoContainer>
                         <img src="https://avatars.githubusercontent.com/u/78705243?v=4" alt=""/>
-                        <a href="https://github.com/yungsavkas" target={'_blank'}>Савелий Рашин</a>
-                        <p>Веб разработчик</p>
+                        <a href="https://github.com/yungsavkas" target={'_blank'}>Saveli Rashin</a>
+                        <p>Web developer</p>
                     </PhotoContainer>
                 </PhotoWrapper>
             </Container>

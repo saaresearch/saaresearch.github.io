@@ -393,7 +393,7 @@ SPLIT_VAL_VALUE: 0.35`
                 </Images>
                 <p>This project is actively used in testing new models and datasets in Insystem for classification and detection of garbage.</p>
                 <br/>
-                <video src={vids} autoPlay="autoplay" muted loop />
+                <video src={vids} autoPlay="autoplay" loop muted defaultMuted playsinline/>
                 <SectionLine text={'Our team'}/>
                 <PhotoWrapper>
                     <PhotoContainer>

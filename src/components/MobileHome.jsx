@@ -5,7 +5,7 @@ import promo from "../assets/promo.mp4";
 const MobileHome = () => {
     return (
         <Wrapper>
-            <Video src={promo} autoPlay="autoplay" muted loop/>
+            <Video src={promo} autoPlay="autoplay" muted loop defaultMuted playsinline/>
             <Shadow/>
             <Title>ODRS</Title>
             <SubTitle>Open source recommendation system for training object detection models</SubTitle>

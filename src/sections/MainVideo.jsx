@@ -7,7 +7,7 @@ import promo from '../assets/promo.mp4';
 const MainVideo = () => {
 
     return (
-        <Video id="promo" src={promo} autoPlay="autoplay" muted loop defaultMuted playsinline/>
+        <Video id="promo" src={promo} autoPlay="autoplay" muted loop defaultMuted playsinline playsInline/>
     );
 };
 

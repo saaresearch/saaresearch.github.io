@@ -71,7 +71,7 @@ speed: 1 `
 `#  Name *.txt file with names classes
 CLASSES: classes.txt
 
- # This file generated automaticaly
+# This file generated automaticaly
 CONFIG_PATH: dataset.yaml
 
 # Path to data
@@ -85,7 +85,7 @@ IMG_SIZE: 300
 #  "yolov7x", "yolov7", "yolov7-tiny", #"yolov8x6", "yolov8x",
 #  "yolov8s", "yolov8n", "yolov8m", "faster-rcnn", "ssd"]
 
-# **NOTE**: For successful training of the ssd model, the size of your images should not exceed 512x512
+# NOTE: For successful training of the ssd model, the size of your images should not exceed 512x512
 
 MODEL: ssd
 
@@ -99,7 +99,6 @@ GPU_COUNT: 2
 SELECT_GPU: 0,1
 
 # parameters for autosplit dataset
-SPLIT_TEST_VALUE: 0.05
 SPLIT_TRAIN_VALUE: 0.6
 SPLIT_VAL_VALUE: 0.35`
 
@@ -254,7 +253,7 @@ SPLIT_VAL_VALUE: 0.35`
                 <p>If everything worked successfully, you will see something like the following answer:</p>
                 <CodeBlock>
                     <pre>
-                      {`Number of images: 1016\nW: 800\nH: 600\nGini Coefficient: 64.0\nNumber of classes: 5\nTop models for training:\n1) yolov5x\n2) yolov5l\n3) yolov8x6`}
+                      {`Number of images: 3496\nWidth: 960\nHeight: 540\nGini Coefficient: 94.0\nNumber of classes: 28\nTop models for training:\n1) yolov7\n2) yolov8x6\n3) yolov7x`}
                     </pre>
                     <CopyBtn onClick={(e) => handleCopy(e)}>
                         <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
@@ -329,7 +328,7 @@ SPLIT_VAL_VALUE: 0.35`
                 <p>Initializing a task:</p>
                 <CodeBlock>
                     <pre>
-                        {`from ODRS.ODRS.api.ODRS import ODRS\n#init object with parameters\nodrs = ODRS(job="object_detection", data_path = 'full_data_path', classes = "classes.txt",\n\timg_size = "512", batch_size = "25", epochs = "300",\n\tmodel = 'yolov8x6', gpu_count = 1, select_gpu = "0", config_path = "dataset.yaml",\n\tsplit_train_value = 0.6, split_test_value = 0.35, split_val_value = 0.05)`}
+                        {`from ODRS.ODRS.api.ODRS import ODRS\n#init object with parameters\nodrs = ODRS(job="object_detection", data_path = 'full_data_path', classes = "classes.txt",\n\timg_size = "512", batch_size = "25", epochs = "300",\n\tmodel = 'yolov8x6', gpu_count = 1, select_gpu = "0", config_path = "dataset.yaml",\n\tsplit_train_value = 0.6, split_val_value = 0.35)`}
                     </pre>
                     <CopyBtn onClick={(e) => handleCopy(e)}>
                         <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true">
@@ -407,7 +406,7 @@ SPLIT_VAL_VALUE: 0.35`
                     <PhotoContainer>
                         <img src={ph2} alt=""/>
                         <a href="https://github.com/aimspot" target={'_blank'}>Mikhail Gerasimchuk</a>
-                        <p>ML SpecialistL</p>
+                        <p>ML Specialist</p>
                     </PhotoContainer>
                     <PhotoContainer>
                         <img src="https://avatars.githubusercontent.com/u/38701834?v=4" alt=""/>

@@ -2,6 +2,9 @@ import React from 'react';
 import styled from "styled-components";
 import SectionLine from "../components/SectionLine";
 import vids from '../vids.mp4'
+import ph1 from '../1.JPG'
+import ph2 from '../ph2.jpg'
+
 const Code = () => {
     const installCode = `git clone https://github.com/saaresearch/ODRS.git\ncd ODRS/\npip install -r requirements.txt `
     const dir1 = `user_datasets
@@ -397,17 +400,24 @@ SPLIT_VAL_VALUE: 0.35`
                 <SectionLine text={'Our team'}/>
                 <PhotoWrapper>
                     <PhotoContainer>
-                        <img src="" alt=""/>
+                        <img src={ph1} alt=""/>
+                        <a href="https://itmo.ru/ru/viewperson/1194/duhanov_aleksey_valentinovich.htm" target={'_blank'}>Алексей Духанов</a>
+                        <p>Куратор</p>
                     </PhotoContainer>
                     <PhotoContainer>
-                        <img src="" alt=""/>
-                    </PhotoContainer>
-
-                    <PhotoContainer>
-                        <img src="" alt=""/>
+                        <img src={ph2} alt=""/>
+                        <a href="https://github.com/aimspot" target={'_blank'}>Михаил Герасимчук</a>
+                        <p>Специалист по ML</p>
                     </PhotoContainer>
                     <PhotoContainer>
-                        <img src="" alt=""/>
+                        <img src="https://avatars.githubusercontent.com/u/38701834?v=4" alt=""/>
+                        <a href="https://github.com/a-smetanin" target={'_blank'}>Артем Сметанин</a>
+                        <p>Специалист по ML</p>
+                    </PhotoContainer>
+                    <PhotoContainer>
+                        <img src="https://avatars.githubusercontent.com/u/78705243?v=4" alt=""/>
+                        <a href="https://github.com/yungsavkas" target={'_blank'}>Савелий Рашин</a>
+                        <p>Веб разработчик</p>
                     </PhotoContainer>
                 </PhotoWrapper>
             </Container>
@@ -419,20 +429,29 @@ export default Code;
 const PhotoWrapper = styled.div`
   display: flex;
   gap: 30px;
-  //flex-wrap: wrap;
+  flex-wrap: wrap;
 `
 const PhotoContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
+    width: 22%;
     justify-content: center;
     align-items: center;
+  @media (max-width: 768px) {
+    width: 43%;
+    gap: 10px;
+  }
   img {
      width: 100%;
-    height: 200px;
     border-radius: 100%;
     border: 4px solid gray;
+    object-fit: cover;
+  }
+  a {
+    text-align: center;
+    font-weight: 600;
+    font-size: 19px;
   }
 `
 

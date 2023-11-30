@@ -164,7 +164,7 @@ const SubTitle = styled.h2`
   }
 `
 const TextUp = styled.span`
-    transition: all 2s ease;
+    transition: all 1s ease;
     color: ${({ isActive }) => isActive ? 'rgba(255,255,255,0.6)' : 'gray'};
     width: 90%;
     margin: 0 auto;
@@ -234,7 +234,7 @@ const Box = styled.div`
     width: 100%;
     height: 100%;
     border: 3px solid transparent; /* Изначально прозрачный бордер */
-    animation: ${({ isActive }) => isActive ? css`${fillBorderAnimation} 3s forwards` : 'none'};
+    animation: ${({ isActive }) => isActive ? css`${fillBorderAnimation} 1s forwards` : 'none'};
     transform: translate(-50%, -50%) scaleY(0);
     transform-origin: top;
   }

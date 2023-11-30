@@ -6,7 +6,7 @@ const Trainig = () => {
 
     const checkVisibility = () => {
         const rect = elementRef.current.getBoundingClientRect();
-        const isVisible = rect.top <= 60;
+        const isVisible = rect.top <= 160;
         if (isVisible) {
 
             setInterval(() => {

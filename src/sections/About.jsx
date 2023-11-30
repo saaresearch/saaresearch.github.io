@@ -10,7 +10,7 @@ const About = () => {
 
     const checkVisibility = () => {
         const rect = elementRef.current.getBoundingClientRect();
-        const isVisible = rect.top >= 0;
+        const isVisible = rect.top <= 50;
         if (isVisible) {
              setInterval(() => {
                 if (activeBox < 15) {

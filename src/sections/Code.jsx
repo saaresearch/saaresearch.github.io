@@ -4,6 +4,9 @@ import SectionLine from "../components/SectionLine";
 import vids from '../vids.mp4'
 import ph1 from '../1.JPG'
 import ph2 from '../ph2.jpg'
+import logo1 from '../logo1.png'
+import logo2 from '../logo2.png'
+import logo3 from '../logo3.png'
 
 const Code = () => {
     const installCode = `git clone https://github.com/saaresearch/ODRS.git\ncd ODRS/\npip install -r requirements.txt `
@@ -419,12 +422,51 @@ SPLIT_VAL_VALUE: 0.35`
                         <p>Web developer</p>
                     </PhotoContainer>
                 </PhotoWrapper>
+                <SectionLine text={'Sponsors'}/>
+                <Sponsors>
+                    <div style={{height: '60px', display: 'flex', justifyContent: 'center'}}>
+                        <img src={logo1} alt="1"/>
+                    </div>
+                    <div style={{height: '100px', display: 'flex', alignItems: 'center', gap: '16px'}}>
+                        <img src={logo2} alt="3"/>
+                        <p>Insystem</p>
+                    </div>
+                    <div>
+                        <img src={logo3} alt="2"/>
+                    </div>
+
+                </Sponsors>
             </Container>
         </Wrapper>
     );
 };
 
 export default Code;
+const Sponsors = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  div {
+    padding: 0 8px;
+    width: 30%;
+    @media (max-width: 768px) {
+      width: 80%;  
+    }
+    p {
+      font-weight: 600;
+      font-size: 30px;
+    }
+    img {
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+      width: fit-content!important;
+    }
+  }
+`
 const PhotoWrapper = styled.div`
   display: flex;
   gap: 30px;
